@@ -1,4 +1,4 @@
-<br><br><center>
+<br><br><br><center>
 <h2><b>About Us</b></h2>				
 </center>
  <p>	
@@ -32,7 +32,7 @@ viuk gj nkf;Ro] lnk [kqn vkxs vkdj viuk;k gS A <br>
 Lo- ykyk Jh jkeLo:Ik th o Lo- Jherh “kdqUryk nsoh th dh ukS lUrkuksa esa r`rh; LFkku dh lUrku Jh lksgu yky xqIrk th lektlsoh O;fDr gSaA os Lo;a ,d laLFkk gSaA og fujUrj vkxkeh ih<+h ds fy, u;s vkn”kZ LFkkfir dj jgs gSaA vkidk Hkjk iwtk ifjokj gSA vkidh f”k{kk nsgjknwu o p.Mhx<+ esa gqbZA f”k{kk mijkUr vki dsUnzh; lsok egkys[kkdkj iatkc esa fyfid ds :Ik esa dk;Zjr~ jgs rRi”pkr ofj’B ys[kk ijh{kd ds :i esa nsgjknwu esa Hkh dk;Z fd;k ijUrq ftlds jx&jx esa lekt lsok clh gks] og ukSdjh esa dgka ca/kus okyk FkkA jk’Vªh; Lo;a lsod la?k ds >.Ms rys vkius lekt lsok dk ozr fy;kA ukSdjh ds nkSjku gh vkius ^mRrjkapy izns”k vxzoky egklHkk^ dk xBu fd;kA vkius v/;{k cudj lekt dks ,d dq”ky usr`Ro fn;kA rRi”pkr~ 150 “kk[kk,a cukdj 18 ftyk dk;Zdkfjf.k;ksa ds lkFk feydj vxzoaf”k;ksa dks laxfBr fd;kA Jhjkenkl vxzoky th }kjk euksuhr vUrjkZ’Vªh; oS”; egklEesyu dh bdkbZ ÞmRrjk[k.M oS”; egklEesyuß ds Hkh vki izns”k v/;{k gSaA vkidh deZBrk ,oa vius nkf;Roksa ds izfr lR;fu’Bk ds n`f’Vxr j[krs gq, vxzksgk fodkl VªLV dh vksj ls o’kZ 2008 esa izns”k ds rRdkyhu ek0 eq[;ea=h Jh Hkqou pUnz [k.Mwjh th }kjk vkidks ^egkjktk vxzlSu jk’Vªh; iqjLdkj^ iznku fd;k x;kA nSfud tkxj.k ds iz/kku lEiknd ,oa jkT; lHkk lnL; Jh ujsUnz eksgu ds gkFkksa vkidks igys gh ^vxzjRUk^ dh mikf/k fey pqdh gSA Hkqous”oj ¼mM+hlk½ esa Jh jke nkl vxzoky }kjk [kk|ea=h ek0 osn izdk”k th o ek0 eq[;ea=h th uohu iVuk;d th ds gkFkksa 51000@& :Ik;s dk iqjLdkj Hkh vkidks izkIr gqvk gSA
 Ukhfr fuiq.k O;fDr dks iqjLdkj feys ;k u feys bldk dksbZ egRo ugha] og rks fuysZi gksdj vius dÙkZO; dks iwjk djus esa yxk jgrk gSA blh dM+h esa mRrjk[k.M esa nsgjknwu] :nziqj] fdPNk o flrkjxat esa pkj vLirky dk;Zjr gSa o [kVhek esa fMLisUljh dk;Z dj jgh gSA bZ”oj vkidks “kfDr nsA vkidh rhljh Kkup{kq 16 djksM+ oS”;ksa ds fy, ojnku fl) gksxh blh vk”kk esa vkidks vUrjkZ’Vªh; oS”; egklEesyu dk vUrjkZ’Vªh; ofj’B mik/;{k fu;qDr fd;k x;k gS vki vUrjkZ’Vªh; egkEesyu ds laLFkkid lnL;ksa esa ,d gSaA
 </hindi></p>
-<hindi><h2><center><u>oS”; lekt ds ?kVd </u></center></h2></hindi>
+<h2><center><u>वैश्य समाज के घटक </u></center></h2>
 <div class="container-fluid columns">
   <input type="checkbox" class="read-more-state" id="list" />
 

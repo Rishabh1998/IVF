@@ -1,4 +1,4 @@
-				<br><br><br>
+				<br><br><br><br>
 				
 				<center>
 				<h2 class="hind"><b>vUrjkZ"Vªh; oS'; egklEesyu] egkuxj] nsgjknwu</b></h2><br>
@@ -30,16 +30,9 @@ cSad</h3> IFSC <h3 class="hind"> dksM%</h3> <b> ALLA0212834 </b>
       <br/>
     <?php } ?>
 	
-                        <form  action="<?php echo $action; ?>" method="post" name="payuForm">
-						<input type="hidden" name="key" value="<?php echo $MERCHANT_KEY ?>" />
-      <input type="hidden" name="hash" value="<?php echo $hash ?>"/>
-      <input type="hidden" name="txnid" value="<?php echo $txnid ?>" />
-	  <input type="hidden" name="amount" value="<?php echo 200 ?>" />
-	   <input type="hidden" name="productinfo" value="payu_paisa" />
-	  <input type= "hidden" name="surl" value="http://localhost/site17/success.php"  />
-	  <input type= "hidden" name="furl" value="http://localhost/site17/failure.php"  />
-	  <input type="hidden" name="service_provider" value="payu_paisa" />
-	 
+                       <!-- <form  action="<?php #echo $action; ?>" method="post" name="payuForm"> -->
+					   <form  action="action.php" method="post" enctype="multipart/form-data">
+						
                             <div class="form-group">
 							
                                 <input type="text" class="form-control" name="firstname" placeholder="युवक/युवती का नामः" required="true" value="<?php echo (empty($posted['firstname'])) ? '' : $posted['firstname']; ?>">
@@ -48,15 +41,15 @@ cSad</h3> IFSC <h3 class="hind"> dksM%</h3> <b> ALLA0212834 </b>
                                 <input type="text" class="form-control" name="gotr" placeholder="गौत्र">
                             </div> 
                             <div class="radio">
-							<label><input type="radio" name="optradio" checked>सामान्य </label>
+							<label><input type="radio" name="optradio" value="सामान्य " checked>सामान्य </label>
 							&nbsp
- 							 <label><input type="radio" name="optradio">मांगलिक  </label>
+ 							 <label><input type="radio" name="optradio" value="मांगलिक">मांगलिक  </label>
 							&nbsp
- 							 <label><input type="radio" name="optradio">विधुर </label>
+ 							 <label><input type="radio" name="optradio" value="विधुर">विधुर </label>
 							 &nbsp
-							 <label><input type="radio" name="optradio">विधवा </label>
+							 <label><input type="radio" name="optradio" value="विधवा">विधवा </label>
 							 &nbsp
-							 <label><input type="radio" name="optradio">तलाकशुदा </label>
+							 <label><input type="radio" name="optradio" value="तलाकशुदा">तलाकशुदा </label>
 							 &nbsp
 							 
 							</div>
@@ -73,18 +66,18 @@ cSad</h3> IFSC <h3 class="hind"> dksM%</h3> <b> ALLA0212834 </b>
 								</div>
 								<div class="col-md-4">
 								<select class="form-control" name="month" required="true">
-								<option value="1">January</option>
-								<option value="2">February</option>
-								<option value="3">March</option>
-								<option value="4">April</option>
-								<option value="5">May</option>
-								<option value="6">June</option>
-								<option value="7">July</option>
-								<option value="8">August</option>
-								<option value="9">September</option>
-								<option value="10">October</option>
-								<option value="11">November</option>
-								<option value="12">December</option>
+								<option value="January">January</option>
+								<option value="February">February</option>
+								<option value="March">March</option>
+								<option value="April">April</option>
+								<option value="May">May</option>
+								<option value="June">June</option>
+								<option value="July">July</option>
+								<option value="August">August</option>
+								<option value="September">September</option>
+								<option value="October">October</option>
+								<option value="November">November</option>
+								<option value="December">December</option>
 								</select>
 								</div>
 								<div class="col-md-4">
@@ -111,9 +104,9 @@ cSad</h3> IFSC <h3 class="hind"> dksM%</h3> <b> ALLA0212834 </b>
 <input type="text" class="form-control " name="weight" placeholder="वजनः.ः">
 </div>
 <div class="radio "><b>कार्यः </b>
-							<label><input type="radio" name="work" checked>व्यवसाय </label>
+							<label><input type="radio" name="work" value="व्यवसाय" checked>व्यवसाय </label>
 							&nbsp
- 							 <label><input type="radio" name="work">नौकरी  </label>
+ 							 <label><input type="radio" name="work" value="नौकरी">नौकरी  </label>
 							
 							</div>
                            <br>
@@ -122,11 +115,11 @@ cSad</h3> IFSC <h3 class="hind"> dksM%</h3> <b> ALLA0212834 </b>
 <input type="text" class="form-control " name="edu_qual" placeholder="शैक्षिक योग्यताः">
 </div>
 <div class="radio "><b>रंगः</b>
-							<label><input type="radio" name="facecolor" checked>गोरा </label>
+							<label><input type="radio" name="facecolor" value="गोरा" checked>गोरा </label>
 							&nbsp
- 							 <label><input type="radio" name="facecolor">गेहूंआ  </label>
+ 							 <label><input type="radio" name="facecolor" value="गेहूंआ">गेहूंआ  </label>
 							&nbsp
- 							 <label><input type="radio" name="facecolor">श्याम </label>
+ 							 <label><input type="radio" name="facecolor" value="श्याम">श्याम </label>
 							 &nbsp
 							
 							</div>
@@ -169,13 +162,13 @@ cSad</h3> IFSC <h3 class="hind"> dksM%</h3> <b> ALLA0212834 </b>
 <input type="text" class="form-control " name="houses" placeholder="निवास निजी/किराये काः">
 </div>
 <div class="radio "><b>युवक/युवती से अतिरिक्तः<br>भाइः</b>
-							<label><input type="radio" name="bhai" checked>विवाहित  </label>
+							<label><input type="radio" name="bhai" value="विवाहित" checked>विवाहित  </label>
 							&nbsp
- 							 <label><input type="radio" name="bhai">अविवाहित. </label>
+ 							 <label><input type="radio" name="bhai" value="अविवाहित">अविवाहित. </label>
 							<br><b>बहनः<b>
-							<label><input type="radio" name="behn" checked>विवाहित </label>
+							<label><input type="radio" name="behn" value="विवाहित" checked>विवाहित </label>
 							&nbsp
- 							 <label><input type="radio" name="behn">अविवाहित.  </label>
+ 							 <label><input type="radio" name="behn" value="अविवाहित">अविवाहित.  </label>
 							</div>
                            <br> 
 
@@ -191,15 +184,20 @@ cSad</h3> IFSC <h3 class="hind"> dksM%</h3> <b> ALLA0212834 </b>
 <div class="form-group">
 <input type="text" class="form-control " name="proposed_mobile" placeholder="मोबाईल न.ः">
 </div>
-
-
+<div class="form-group">
+Upload your picture:
+<input type="file" name="file" id="file">
+</div>
 							
 							
                             <div class="form-group">
                                 <?php if(!$hash) { ?>
-            <td colspan="4"><input type="submit" value="Submit" class = "btn btn-success" /></td>
+            <td colspan="4"><div class='pm-button'><input type="submit" value="Pay Now" class = "btn btn-success" name="submit" /></div></td>
           <?php } ?>
                             </div>
+							
+			
+							
 							
                         </form>
 						</div>

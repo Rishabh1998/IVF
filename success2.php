@@ -31,7 +31,7 @@ session_start();
 $to = "ivfukddoon@gmail.com";
          $subject = "Payment Success.";
 		 $message = "<h3>Payment Success</h3>";
-		 $message .= $_SESSION["name"] . " has paid a sum of Rs. 200 <br> Contact No. - ". $_SESSION["mobile"];
+		 $message .= $_SESSION["name"] . " has paid a sum of Rs. 100 for Subscription form. <br> Contact No. - ". $_SESSION["mobile"];
 		 
 		 $header = "From:ivfukddoon@gmail.com \r\n";
          $header .= "MIME-Version: 1.0\r\n";

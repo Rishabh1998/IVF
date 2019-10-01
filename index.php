@@ -1,5 +1,5 @@
 <?php
-
+$nav = 1;
 $MERCHANT_KEY = "tDmo8OaF";
 $SALT = "F5Rby9cEFk";
 // Merchant Key and Salt as provided by Payu.
@@ -66,14 +66,17 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
 <!DOCTYPE html>
 <html>
     <head>
-	 <link rel="shortcut icon" href="img/logo.png" />
+	 <link rel="shortcut icon" href="images/icon.png" />
         <title>International Vaish Federation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
 		<script type="text/javascript" src="bootstrap/js/jquery-3.2.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/carousel.js"></script>
 		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="css/carousel.css" type="text/css">
 		<script>
     var hash = '<?php echo $hash ?>';
     function submitPayuForm() {
@@ -86,15 +89,16 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
   </script>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50" onload="submitPayuForm()">
-	 <div>
+	 <div class="body-padding">
            <?php
             require 'header.php';
            ?>
 		   
 		   <div id="home">
 		  <?php
+		  require 'home.php';
 		  require 'motive.php';
-            require 'home.php';
+            
            ?>
 		   </div>
 
@@ -109,25 +113,30 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
             require 'form.php';
            ?>
 		</div>
-		
+		<div id="form2" class="container-fluid">		   
+		<?php
+            require 'form2.php';
+           ?>
+		</div>
+		<div id="form3" class="container-fluid">		   
+		<?php
+            require 'form3.php';
+           ?>
+		</div>
 		<div id="gallery">
 		<?php
             require 'gallery.php';
            ?>	
 		   </div>
+		   
 		 
 		&nbsp<br>&nbsp<br>&nbsp<br>
 		   </div>
 	
-	<footer class="footer"> 
-               <div class="container">
-               <center>
-			   
-                   <p>Copyright &copy All Rights Reserved. Developed By <a href="https://www.theninequeens.com/">TheNineQueens.</a> </p>
-                   
-               </center>
-               </div>
-           </footer> 
-		   </body>
-	
+	<footer class="footer">
+    <div class="container">
+       <p>Copyright &copy All Rights Reserved. Developed By <a href="https://www.theninequeens.com/">TheNineQueens.</a> </p>
+    </div> 
+</footer>	
+		</body>   
 </html>

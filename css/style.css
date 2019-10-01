@@ -1,0 +1,277 @@
+.navbar{
+    margin-bottom: 10px;
+	padding: 10px;
+}
+.navbar-brand {
+  padding: 2px;
+  
+}
+
+.body-padding{
+	
+}
+.navbar-brand>img {
+  height: 60px;
+  
+  padding-bottom: 8px;
+  width: 60px;
+}
+.navbar-right{
+	padding-right: 20px;
+}
+body {
+	background-color: #f7efeb;
+}
+.body-padding{
+	padding-right: 6.25em;
+	padding-left: 6.25em;
+}
+.img { 
+  width: 400px;
+  height: 200px;
+}
+.carousel {
+  width:100%;
+  height:20%;
+}
+
+.justify{
+	text-align: justify;
+  text-justify: inter-word;
+}
+
+.center{
+	padding-left: 33vw;
+}
+.center-2{
+	padding-left: 38vw;
+}
+
+.footer {
+	font-size:14px;
+    font-weight:bold;
+    padding: 5px;    
+	bottom: 0px;
+	left: 0;
+	right: 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color:#101010;
+  color:#9d9d9d;
+  border-top: solid 1px #eee;
+}
+
+.footer p {
+  margin-top: 30px;
+}
+
+
+/* Get em size for colums: 184/16 */   
+.columns
+{   
+    -moz-column-width: 11.5em; /* Firefox */
+    -webkit-column-width: 11.5em; /* webkit, Safari, Chrome */
+    column-width: 11.5em;
+	transform: translateZ(0)
+}
+/*remove standard list and bullet formatting from ul*/
+.columns ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+/* correct webkit/chrome uneven margin on the first column*/
+.columns ul li:first-child
+{
+    margin-top:0px;
+}
+
+html { 
+    min-height:100%;
+    position:relative;    
+} 
+
+.danger {
+  background-color: #ffdddd;
+  border-left: 6px solid #f44336;
+}
+
+.info {
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3;
+}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+
+
+@font-face {
+    font-family: KrutiDev;
+    src: url('../fonts/k010.TTF') format('truetype');
+}
+
+.hind{
+	position: relative;
+  top: 1px;
+  display: inline;
+  font-family: 'KrutiDev';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;	
+}
+#about{
+	float: right;
+	padding-bottom: 10px;
+}
+
+#about-2{
+	float: left;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 34%;
+  max-width: 33%;
+  padding: 0 10px;
+}
+hindi{
+	font-size: 20px;
+postion: relative;
+top: 2px;
+display: block;
+font-style: normal;
+font-family: 'KrutiDev';
+font-weight: normal;
+line-height: 1;
+padding-left: 30px;
+padding-right: 30px;	
+text-align: justify;
+  text-justify: inter-word;
+  padding-bottom: 30px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+@media (min-width:320px){
+    #autoResize{
+        font-size:12px;
+    }
+
+}
+@media (min-width:481px){
+    #autoResize{
+        font-size:16px;
+    }
+}
+@media (min-width:641px){
+    #autoResize{
+        font-size:18px;
+    }
+}
+@media (min-width:961px){
+    #autoResize{
+        font-size:20px;
+    }
+}
+@media (min-width:1000px){
+    #autoResize{
+        font-size:26px;
+    }
+}
+@media only screen and (max-width: 600px) {
+.body-padding{
+  padding-right: 1.25em;
+  padding-left: 1.25em;
+}
+.navbar{
+    margin-bottom: 10px;
+	padding: 6px;
+}
+.navbar-brand {
+  padding: 1px;
+  
+}
+.navbar-brand>img {
+  height: 50px;
+  padding-bottom: 4px;
+  width: 50px;
+}
+ }

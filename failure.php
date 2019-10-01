@@ -8,7 +8,7 @@ $posted_hash=$_POST["hash"];
 $key=$_POST["key"];
 $productinfo=$_POST["productinfo"];
 $email=$_POST["email"];
-$salt="F5Rby9cEFk";
+$salt="6EJiKejKYK";
 
 // Salt should be same Post Request 
 

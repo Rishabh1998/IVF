@@ -89,37 +89,30 @@ if ($uploadOk == 0) {
     }
 }
 		 $_SESSION["name"] = $_POST["firstname"];
-		 $_SESSION["mobile"] = $_POST["phone"];
-         $message = "<h3>New Registration</h3>";
+		 $_SESSION["mobile"] = $_POST["mobile"];
+         $message = "<h3>New Subscription</h3>";
          $message .= "<h4>Details</h4><table><tr>";
 		 $message .= "<img src='http://ivfuttarakhand.com/images/". rawurlencode(basename($_FILES["file"]["name"]))."' style='width:200px;height:auto;' />";
-         $message .= "<tr><b><td> युवक/युवती का नामः </b></td><td> " . $_POST["firstname"] . "</td></tr>";
+         $message .= "<tr><b><td>नामः </b></td><td> " . $_POST["firstname"] . "</td></tr>";
 		 $message .=  "<tr><b><td> गौत्र : </b></td><td>" . $_POST["gotr"]. "</td></tr>";
-		 $message .=  "<tr><b><td>सामान्य : </b></td><td>" . $_POST["optradio"]. "</td></tr>";
+		 $message .=  "<tr><b><td>पति/पत्नी का नाम  : </b></td><td>" . $_POST["partner"]. "</td></tr>";
 		 $message .=  "  <tr><b><td> जन्मतिथि : </b></td><td>" . $_POST["day"] . " " . $_POST["month"] . " " . $_POST["year"]. "</td></tr>";
-		 $message .=  "<tr><b><td>जन्मस्थान  : </b></td><td>" . $_POST["placeofbirth"]. "</td></tr>";
-		 $message .=  "<tr><b><td>आयुः : </b></td><td>" . $_POST["age"]. "</td></tr>";
-		 $message .=  "<tr><b><td>कद (से.मी.)ः : </b></td><td>" . $_POST["height"]. "</td></tr>";
-		 $message .=  "<tr><b><td>वजन : </b></td><td>" . $_POST["weight"]. "</td></tr>";
-		 $message .=  "<tr><b><td>कार्यः : </b></td><td>" . $_POST["work"] . "</td></tr>";
-		 $message .=  "<tr><b><td>शैक्षिक योग्यताः : </b></td><td>" . $_POST["edu_qual"]. "</td></tr>";
-		 $message .=  "<tr><b><td>रंगः : </b></td><td>" . $_POST["facecolor"]. "</td></tr>";
-		 $message .=  "<tr><b><td>युवक/युवती के प्रतिष्ठान/कार्यालय का नाम : </b></td><td>" . $_POST["company_name"]. "</td></tr>";
-		 $message .=  "<tr><b><td>कार्य स्थलः : </b></td><td>" . $_POST["company_place"]. "</td></tr>";
-		 $message .=  "<tr><b><td>वार्षिक आयः : </b></td><td>" . $_POST["salary"]. "</td></tr>";
-		 $message .=  "<tr><b><td>पिता/संरक्षक का नाम व पूरा पताः : </b></td><td>" . $_POST["address"]. "</td></tr>";
-		 $message .=  "<tr><b><td>संपर्क मोबाईल नं. : </b></td><td>" . $_POST["phone"]. "</td></tr>";
-		 $message .=  "<tr><b><td>व्हट्सएप्पः : </b></td><td>" . $_POST["whatsapp"]. "</td></tr>";
-		 $message .=  "<tr><b><td>ई-मेलः : </b></td><td>" . $_POST["email"]. "</td></tr>";
-		 $message .=  "<tr><b><td>पिता/संरक्षक कात्रयवसाय/नौकरीः : </b></td><td>" . $_POST["father_work"]. "</td></tr>";
-		 $message .=  "<tr><b><td>प्रतिष्ठान का नामः : </b></td><td>" . $_POST["father_company"]. "</td></tr>";
-		 $message .=  "<tr><b><td>कार्य स्थलः </b></td><td>" . $_POST["father_company_place"]. "</td></tr>";
-		 $message .=  "<tr><b><td>परिवार की वार्षिक आयः : </b></td><td>" . $_POST["family_salary"]. "</td></tr>";
-		 
-		 $message .=  "<tr><b><td>युवक/युवती के बारे में अन्य जानकारी : </b></td><td>" . $_POST["info"]. "</td></tr>";
-		 $message .=  "<tr><b><td>प्रस्तावक का अन्य कथन : </b></td><td>" . $_POST["comments"]. "</td></tr>";
-		 $message .=  "<tr><b><td>प्रस्तावक : </b></td><td>" . $_POST["proposed"]. "</td></tr>";
-		 $message .=  "<tr><b><td>मोबाईल न. :</b></td><td> " . $_POST["proposed_mobile"]. "</td></tr></table>";
+		 $message .=  "<tr><b><td>पति/पत्नी की जन्मतिथि  : </b></td><td>" . $_POST["partner_day"] . " " . $_POST["partner_month"] . " " . $_POST["partner_year"]. "</td></tr>";
+		 $message .=  "<tr><b><td>पिता/पति का नाम : </b></td><td>" . $_POST["father"]. "</td></tr>";
+		 $message .=  "<tr><b><td>पता : </b></td><td>" . $_POST["address"]. "</td></tr>";
+		 $message .=  "<tr><b><td>प्रतिष्ठान का नाम : </b></td><td>" . $_POST["prati"]. "</td></tr>";
+		 $message .=  "<tr><b><td>नौकरी (पद सहित)  : </b></td><td>" . $_POST["job"] . "</td></tr>";
+		 $message .=  "<tr><b><td>मोबाइलः : </b></td><td>" . $_POST["mobile"]. "</td></tr>";
+		 $message .=  "<tr><b><td>ई-मेल आई.डी. : </b></td><td>" . $_POST["email"]. "</td></tr>";
+		 $message .=  "<tr><b><td>परिवार में कुल सदस्यः: </b></td><td>" . $_POST["family_count"]. "</td></tr>";
+		 $message .=  "<tr><b><td>विवाहितः : </b></td><td>" . $_POST["married"]. "</td></tr>";
+		 $message .=  "<tr><b><td>अविवाहित:: </b></td><td>" . $_POST["unmarried"]. "</td></tr>";
+		 $message .=  "<tr><b><td>आश्रित बच्चों के नामः  : </b></td><td>" . $_POST["child"]. "</td></tr>";
+		 $message .=  "<tr><b><td>सदस्याता शुल्क (नॉन रिफण्डेबल) : </b></td><td>" . $_POST["non_refund"]. "</td></tr>";
+		 $message .=  "<tr><b><td>संस्था सहयोग राशि: </b></td><td>" . $_POST["rashi"]. "</td></tr>";
+		 $message .=  "<tr><b><td>कुल राशि : </b></td><td>" . $_POST["total_rashi"]. "</td></tr>";
+		 $message .=  "<tr><b><td>अन्य विशेष विवरण (सोशल रानीतिक)ः : </b></td><td>" . $_POST["social"]. "</td></tr>";
+		 $message .=  "<tr><b><td>प्रस्तावक. :</b></td><td> " . $_POST["proposed"]. "</td></tr></table>";
 		 $message .= "<br>Regards, International Vaish Federation </td></tr>";
 		 
 		 
@@ -137,10 +130,10 @@ if ($uploadOk == 0) {
 		
 			echo "";
          }
-         header("location: https://www.payumoney.com/paybypayumoney/#/7D71A6A1B7A61FB5DD0BF587D19690AD"); 
-         header("Location:https://www.payumoney.com/paybypayumoney/#/7D71A6A1B7A61FB5DD0BF587D19690AD");
-         echo("<meta http-equiv='Refresh' content='0; URL=https://www.payumoney.com/paybypayumoney/#/7D71A6A1B7A61FB5DD0BF587D19690AD'>");
-         echo "<script>location='https://www.payumoney.com/paybypayumoney/#/7D71A6A1B7A61FB5DD0BF587D19690AD'</script>";
+         header("location: https://www.payumoney.com/paybypayumoney/#/C582875C2FC7FF27272601C759EA1F85"); 
+         header("Location:https://www.payumoney.com/paybypayumoney/#/C582875C2FC7FF27272601C759EA1F85");
+         echo("<meta http-equiv='Refresh' content='0; URL=https://www.payumoney.com/paybypayumoney/#/C582875C2FC7FF27272601C759EA1F85'>");
+         echo "<script>location='https://www.payumoney.com/paybypayumoney/#/C582875C2FC7FF27272601C759EA1F85'</script>";
       ?>
 	  
 </body>
